@@ -1,5 +1,12 @@
 import { Request, Response } from 'express';
-import Book, { BookInterface } from '@models/Book';
+import Book from '@models/Book';
+
+interface BookInterface {
+  title: string;
+  publisher: string
+  photo: string;
+  authors: string;
+}
 
 class EditBookController {
   async handle(req: Request, res: Response) {
@@ -10,16 +17,17 @@ class EditBookController {
       photo: req.body.photo,
     };
 
-    let { id } = req.params;
-    if (!id) {
-      id = req.body.id;
-    }
+    const { id } = req.params;
 
-    try {
-      Book.findByIdAndUpdate(id, book);
-      res.status(200).json({ success: 'Livro editado com sucesso' });
-    } catch (error) {
-      res.json({ error: error.message });
+    if (req.body.id && !req.body.title || !req.body.publisher || !req.body.photo || !req.body.authors) {
+      res.status(400).json({ error: 'Insira todos os dados' });
+    } else {
+      try {
+        await Book.findByIdAndUpdate(id, book);
+        res.status(200).json({ success: 'Livro editado com sucesso' });
+      } catch (error) {
+        res.json({ error: error.message });
+      }
     }
   }
 }

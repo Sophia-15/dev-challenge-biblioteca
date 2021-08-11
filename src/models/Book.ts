@@ -1,6 +1,6 @@
 import { Schema, model, Document } from 'mongoose';
 
-export interface BookInterface extends Document {
+interface BookInterfaceSchema extends Document {
   title: string;
   publisher: string
   photo: string;
@@ -14,4 +14,4 @@ const BookSchema = new Schema({
   authors: { type: String, required: true },
 });
 
-export default model<BookInterface>('Book', BookSchema);
+export default model<BookInterfaceSchema>('Book', BookSchema);

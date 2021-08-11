@@ -16,6 +16,8 @@
     "class-methods-use-this": "off",
     "no-unused-vars": "off",
     "import/prefer-default-export": "off",
-    "no-undef": "off"
+    "no-undef": "off",
+    "max-len": "off",
+    "no-mixed-operators": "off"
   }
 }
