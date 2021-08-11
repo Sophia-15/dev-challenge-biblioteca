@@ -53,3 +53,7 @@ Discord: https://discord.gg/yvYXhGj <br>
 Linkedin: https://www.linkedin.com/company/devchallenge/<br>
 Twitter: https://twitter.com/dev_challenge<br>
 Instagram: https://www.instagram.com/devchallenge/<br>
+
+---
+
+ **Desenvolvido com ❤ por [Sophia Gallindo](https://github.com/Sophia-15/).** 
