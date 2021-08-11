@@ -7,6 +7,8 @@
   <p align="center">
      Sistema de gerenciamento de biblioteca
        <br />
+    Desafio criado por  <a href="https://www.linkedin.com/in/lorenagmontes/">Lorena</a> :)
+    <br />
     <br />
     <a href="https://github.com/devchallenge-io/biblioteca-backend">Desafio</a>
     ·
@@ -42,7 +44,7 @@ Seu desafio é criar o backend para um sistema de gerenciamento de uma bibliotec
 
 
 
-Desafio criado por  <a href="https://www.linkedin.com/in/lorenagmontes/">Lorena</a> :)
+
 
 
 # Comunidade DevChallenge
